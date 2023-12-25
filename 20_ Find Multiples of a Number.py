@@ -1,5 +1,6 @@
 #  Find Multiples of a Number
 
+# 1 - first Method : 
 def find_multiples(integer, limit):
     result = []
     x = 1 
@@ -7,6 +8,14 @@ def find_multiples(integer, limit):
         result.append(integer * x)
         x += 1
     return result
+
+print(find_multiples(2,6))
+print(find_multiples(2,7))
+print(find_multiples(5,21))
+
+# 1 - second Method : 
+def find_multiples(integer, limit):
+    return list(range(integer,limit + 1, integer))
 
 print(find_multiples(2,6))
 print(find_multiples(2,7))
