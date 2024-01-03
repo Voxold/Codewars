@@ -1,7 +1,8 @@
 # 
 
 def greet(language):
-    langs = [ ("english", "Welcome")
+    langs = {   
+            ("english", "Welcome")
             , ("czech", "Vitejte")
             , ("danish", "Velkomst")
             , ("dutch", "Welkom")
@@ -18,12 +19,12 @@ def greet(language):
             , ("spanish", "Bienvenido")
             , ("swedish", "Valkommen")
             , ("welsh", "Croeso")
-            ]
+            }
     
-    if language not in langs:
-        return 'Welcome!'
+    if language in langs:
+        return langs.get(language)
     else:
-        return langs[language]
+        return 'Welcome!'
     
 print(greet("english"))
 print(greet("spanish"))
