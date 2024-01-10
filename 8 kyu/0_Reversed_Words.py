@@ -19,7 +19,7 @@ def reverse_words (s):
 
     #the_list = s.split(' ')
     #revers_list = the_list[::-1]
-    #convert = ' '.join(revers_list)
+    #convert = ' '.join(revers_list).
 
     return ' '.join(s.split(' ')[::-1])
 
