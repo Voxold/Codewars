@@ -1,5 +1,8 @@
 
 
-list = [5,3,6,78,2,36,85,0,1]
+list = ['kevin', 'has','no','space']
+#list2 = ''.join(list)
 
-print(sorted(list))
+for i in list:
+    list3 = list[0] + list[1]
+    print(list3)
